@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación Ley de Kepler</title>
+    <link rel="stylesheet" href="/css/stylos-index.css">
+    <link rel="stylesheet" href="/css/stylos-footer.css">
+    <link rel="stylesheet" href="/css/stylos-kepler-periodos.css">
+</head>
+
+<body>
+    <div class="clearfix"></div>
+
+    <div id="cabeceraDefault"></div>
+
+    <nav class="contenedor-simulacion">
+        <div id="simulation-container">
+            <div id="sun"></div>
+            <div id="planet"></div>
+        </div>
+
+        <div id="controls">
+            <label for="distance">Distancia al sol: </label>
+            <input type="range" id="distance" min="50" max="200" value="100">
+            <span id="distance-value">100</span>
+        </div>
+    </nav>
+    <!-- Elemento donde se cargará el footer -->
+    <div id="footerDefault"></div>
+
+
+    <script src="/js/footer.js"></script>
+
+    <script src="/js/kepler-periodos.js"></script>
+    <script src="/js/menu.js"></script>
+
+</body>
+
+</html>

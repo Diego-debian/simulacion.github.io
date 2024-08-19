@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+}
+html{
+    background-color: rgb(170, 163, 163);
+}
+
+.cabecera {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 18%;
+    background-color: cadetblue;
+    border: 1px solid #333;
+    box-shadow: 5px 5px 10px rgb(31, 9, 9);
+    display: flex;
+    align-items: center;
+    height: 50px; /* Ajuste de altura para incluir el contenido */
+}
+
+.cabecera img {
+    border-radius: 20%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.cabecera h1 {
+    width: 100%;
+    padding-left: 50px;
+    line-height: 50%;
+}
+
+.menu-container {
+    position: relative;
+    margin-inline-start: 15%;
+}
+
+.menu-icon {
+    background-color: rgb(156, 194, 181);
+    cursor: pointer;
+    color: rgb(5, 6, 8);
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: rgb(156, 194, 181);
+    color: black;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu:hover{
+    /* background-color: black;*/
+    color: yellow;
+    font-size: 20px;
+}
+
+.menu-icon:hover{
+    width: 60%;
+}
+.menu a {
+    display: block;
+    margin: 5px 0;
+}
+.menu a:hover{
+    background: rgb(134, 132, 132);
+    color: rgb(5, 5, 4);
+    font-size: 26px;
+    width: 100%;
+}
+
+.menu-container:hover .menu {
+    display: block;
+    width: 100%;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+  }
+
+  main {
+    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+}
+
+.image-container {
+    display: flex;
+    gap: 20px; /* Espacio entre las imágenes */
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel-container {
+    width: 30%;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

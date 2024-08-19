@@ -1,0 +1,56 @@
+body {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-simulacion{
+    padding-top: 5%;
+    padding-left: 30%;
+}
+
+#simulation-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 30px yellow;
+}
+
+#planet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    box-shadow: 0 0 10px blue;
+}
+
+#controls {
+    margin-left: 10%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#distance {
+    margin-left: 10px;
+    margin-right: 10px;
+}
